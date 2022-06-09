@@ -1,4 +1,4 @@
-matplotlib==3.4.3
+matplotlib==3.3.4
 image==1.5.33
 numpy==1.21.3
 pandas==1.3.4
@@ -78,10 +78,7 @@ PyYAML==6.0
 pyzmq==23.1.0
 requests==2.26.0
 requests-oauthlib==1.3.1
-rich==12.4.4
-rsa==4.8
-s3fs==2022.5.0
-scikit-learn==1.0.1
+
 scipy==1.7.1
 seaborn==0.11.2
 semver==2.13.0
@@ -116,15 +113,9 @@ urllib3==1.26.7
 validators==0.20.0
 virtualenv==20.14.1
 virtualenv-clone==0.5.7
-watchdog==2.1.8
-wcwidth==0.2.5
-webencodings==0.5.1
-Werkzeug==2.1.2
-widgetsnbextension==3.6.0
-wrapt==1.14.1
+
 xgboost==1.6.1
 xlrd==2.0.1
 xlwings==0.24.9
 xlwt==1.3.0
-yarl==1.7.2
-zipp==3.8.0
+

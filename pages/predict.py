@@ -6,8 +6,6 @@ import numpy as np
 #import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import MultipleLocator
 import sys
 import seaborn as sns
 import warnings
@@ -30,17 +28,12 @@ from sklearn.model_selection import *
 # 评价指标函数定义，其中R2的指标可以由模型自身得出，后面的score即为R2
 
 
-def load_css(css_file):
-    with open(css_file) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 #model_st = pickle.load(open('model.pkl', 'rb'))
 
 warnings.filterwarnings("ignore")
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
-plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-pd.set_option('display.max_rows', 100,'display.max_columns', 1000,"display.max_colwidth",1000,'display.width',1000)
+
 
 
 def evaluation(model):
@@ -76,7 +69,7 @@ def predict_houseprice(市区, 户型, 面积, 朝向, 装修, 楼层, 建成年
 
 def app():
     # st.write('# Home')#这个#好像是一级标题的意思
-    load_css('style/style.css')
+    
 
     html_temp = """
     <div style="background-color:tomato;padding:10px">
@@ -104,7 +97,3 @@ def app():
     if st.button("Predict"):
         result = predict_houseprice(市区, 户型, 面积, 朝向, 装修, 楼层, 建成年份, 楼型)
     st.success('二手房价格：{}'.format(result))
-
-
-
-

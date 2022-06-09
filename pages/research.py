@@ -3,9 +3,7 @@ import requests
 import pandas as pd
 from PIL import Image
 
-def load_css(css_file):
-    with open(css_file) as f:
-        st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
+
  
 def research_houseprice(市区,户型,面积,朝向,装修,楼层,建成年份,楼型):
     a=[x for x in [市区,户型,面积,朝向,装修,楼层,建成年份,楼型]]
@@ -15,7 +13,7 @@ def research_houseprice(市区,户型,面积,朝向,装修,楼层,建成年份,�
        
  
 def app():
-    load_css('style/style.css')
+    
     
     html_temp="""
     <div style="background-color:tomato;padding:10px">

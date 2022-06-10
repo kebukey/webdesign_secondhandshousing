@@ -1,9 +1,6 @@
 attr==0.3.1
 attrs==21.4.0
 brotli==1.0.9
-ConfigParser==5.2.0
-cryptography==37.0.2
-
 HTMLParser==0.0.2
 ipython==8.4.0
 ipywidgets==7.7.0

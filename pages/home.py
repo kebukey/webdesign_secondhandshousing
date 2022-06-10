@@ -5,13 +5,13 @@ import requests
 from PIL import Image
 
 
-def load_php(css_file):
+def load_css(css_file):
     with open(css_file) as f:
         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
 def app():
     #st.write('# Home')#这个#好像是一级标题的意思
-    load_php('style/style.php')
+    load_css('style/style.css')
    # lottie_coding=load_lottie("https://assets8.lottiefiles.com/packages/1f20_zzytykf2.json")
     img_second_housing=Image.open('image/二手房.jpg')
     img_forest=Image.open('image/随机森林.png')

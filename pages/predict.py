@@ -13,7 +13,7 @@ import math
 
 from sklearn.neighbors import *
 from sklearn.svm import *
-from sklearn.metrics import *
+#from sklearn.metrics import *
 from sklearn.linear_model import *
 from sklearn.neural_network import *
 from sklearn.tree import *
